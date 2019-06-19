@@ -160,3 +160,8 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+Release/
+libtier0_srv.so
+libvstdlib_srv.so
+smsdk_ext.cpp
