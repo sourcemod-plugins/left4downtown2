@@ -1,4 +1,4 @@
-#Left4Downtown2 - L4D2 Sourcemod Extension#
+# Left4Downtown2 - L4D2 Sourcemod Extension#
 
 ## Changelog ##
 
