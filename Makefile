@@ -1,10 +1,10 @@
 # (C)2004-2008 SourceMod Development Team
 # Makefile written by David "BAILOPAN" Anderson
 
-SMSDK ?= ../../../sourcemod
-SRCDS_BASE ?= ../../../srcds
-HL2SDK_L4D2 ?= ../../../hl2sdk
-MMSOURCE ?= ../../../mmsource
+SMSDK ?= ../sourcemod-latest
+SRCDS_BASE ?= ../srcds
+HL2SDK_L4D2 ?= ../hl2sdk-l4d2
+MMSOURCE ?= ../mmsource-1.10.6
 
 #####################################
 ### EDIT BELOW FOR OTHER PROJECTS ###
@@ -54,7 +54,7 @@ LINK += $(HL2LIB)/tier1_i486.a $(HL2LIB)/mathlib_i486.a libvstdlib_srv.so libtie
 
 INCLUDE += -I. -I.. -Isdk -I$(HL2PUB) -I$(HL2PUB)/engine -I$(HL2PUB)/mathlib -I$(HL2PUB)/tier0 \
         -I$(HL2PUB)/tier1 -I$(METAMOD) -I$(METAMOD)/sourcehook -I$(SMSDK)/public -I$(SMSDK)/public/extensions \
-        -I$(SMSDK)/sourcepawn/include
+        -I$(SMSDK)/sourcepawn/include -I../sourcepawn/include -I../amtl -I../amtl/amtl
 
 CFLAGS += -DSE_EPISODEONE=1 -DSE_DARKMESSIAH=2 -DSE_ORANGEBOX=3 -DSE_BLOODYGOODTIME=4 -DSE_EYE=5 \
 	-DSE_CSS=6 -DSE_ORANGEBOXVALVE=7 -DSE_LEFT4DEAD=8 -DSE_LEFT4DEAD2=9 -DSE_ALIENSWARM=10 \
